@@ -51,9 +51,12 @@ Panel".
     It is important to remember that GPOs cannot be assigned to a AD group only to OUs. This might mean that there is an OU with only one group in it just so a GPO can be assigned. (If the previous two sentences make your head hurt you are beginning to understand why GPOs are so complex).
 
 9.  In the GPO editor open Computer Configuration -> Policies -> Administrative Templates: Policy definitions... -> Control Panel
+
+\
 ![][3]
 
 10. Double click on Settings Page Visibility to open the configuration window for that option. As shown on the right side there is some limited help for configuring choices regarding this GPO control. Sometimes they are helpful.... Uhhh sometimes not, Google is your friend here.
+
 \
 ![][4]
 
