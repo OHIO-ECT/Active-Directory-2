@@ -37,7 +37,6 @@ Panel".
 
     **Note:** That the default "lab.com\\Computers" OU does NOT show in the GPO editor as a choice for attaching policies to.
 
-
 7.  Right-Click on the new GPO and select Edit. This will open the GPO editor (note the "Standard" view option in the right-side pane is often easier to deal with as shown in image).
 \
 ![][2]
