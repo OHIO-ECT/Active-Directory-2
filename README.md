@@ -19,7 +19,7 @@ Pic for reference):
 
     Under "Ducky Labs\\Computers" create OUs: Sales and Marketing
 
-
+\
 ![][1]
 
 3.  From lab.com\\Users OU move users: Sally Smith and Bob Jones into lab.com\\Ducky Labs\\Users OU
