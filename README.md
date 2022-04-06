@@ -13,11 +13,11 @@
 2.  Use the MMC Console saved in previous lab. Create the following (see
 Pic for reference):
 
-   Under "lab.com" create an OU: "Ducky Labs"
+    Under "lab.com" create an OU: "Ducky Labs"
+<br>
+    Under "Ducky Labs" create OUs: Users, Computers and Groups
 
-   Under "Ducky Labs" create OUs: Users, Computers and Groups
-\
-Under "Ducky Labs\\Computers" create OUs: Sales and Marketing
+    Under "Ducky Labs\\Computers" create OUs: Sales and Marketing
 \
 ![][1]
 
