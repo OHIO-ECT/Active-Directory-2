@@ -38,41 +38,36 @@ Panel".
     **Note:** That the default "lab.com\\Computers" OU does NOT show in the GPO editor as a choice for attaching policies to.
 
 7.  Right-Click on the new GPO and select Edit. This will open the GPO editor (note the "Standard" view option in the right-side pane is often easier to deal with as shown in image).
+
 \
 ![][2]
 
-
 8.  This image shows a hierarchy with two top categories Computer Configuration and User Configuration. In order to make this as sane as possible when building a GPO only work with the Computer Configuration side **OR** the User Configuration side. GPOs that need both do occur but are rare!
 
-Computer Configuration GPOs change options a specific computer NO MATTER WHO logs into it. These GPOs are assigned to OUs the contain computer AD objects. In our case "lab.com\\Ducky Labs\\Computers\\Sales".
+    Computer Configuration GPOs change options a specific computer NO MATTER WHO logs into it. These GPOs are assigned to OUs the contain computer AD objects. In our case "lab.com\\Ducky Labs\\Computers\\Sales".
 
-User Configuration GPOs change options that follow a user NO MATTER WHICH workstation they use. These GPOs are assigned to OUs the contain user AD objects. In our case "lab.com\\Ducky Labs\\Users".
+    User Configuration GPOs change options that follow a user NO MATTER WHICH workstation they use. These GPOs are assigned to OUs the contain user AD objects. In our case "lab.com\\Ducky Labs\\Users".
 
-It is important to remember that GPOs cannot be assigned to a AD group only to OUs. This might mean that there is an OU with only one group in it just so a GPO can be assigned. (If the previous two sentences make your head hurt you are beginning to understand why GPOs are so complex).
-
+    It is important to remember that GPOs cannot be assigned to a AD group only to OUs. This might mean that there is an OU with only one group in it just so a GPO can be assigned. (If the previous two sentences make your head hurt you are beginning to understand why GPOs are so complex).
 
 9.  In the GPO editor open Computer Configuration -> Policies -> Administrative Templates: Policy definitions... -> Control Panel
 ![][3]
-
 
 10. Double click on Settings Page Visibility to open the configuration window for that option. As shown on the right side there is some limited help for configuring choices regarding this GPO control. Sometimes they are helpful.... Uhhh sometimes not, Google is your friend here.
 \
 ![][4]
 
-
 11. Select the "Enabled" option. This will un-gray options below. Reading the right-side pane about the GPO control provides information about options. In this case we will set the Settings page on affected PCs to only show the "About" information of the PC. This will hide all the other settings options from the users. To do this in the "Settings Page Visibility:" fill in *showonly:about* and press the OK button to save.
 \
 ![][5]
 
-
 12. Once you have created and linked a GPO make sure your workstation is in the OU that the GPO is applied to. There are three options to get a GPO to apply.
-\
-**First**, wait... GPOs are applied every 30 to 120 minutes \*yawn\*
-\
-**Second**, in a command window run `gpupdate /force` command at a command prompt on the workstation. This is the recommended option. It might also need a logout and back in depending on the GPO involved.
-\
-**Third**, reboot the workstation. Use this option when in doubt.
 
+    **First**, wait... GPOs are applied every 30 to 120 minutes \*yawn\*
+
+    **Second**, in a command window run `gpupdate /force` command at a command prompt on the workstation. This is the recommended option. It might also need a logout and back in depending on the GPO involved.
+
+    **Third**, reboot the workstation. Use this option when in doubt.
 
 13. Login to Win10 as jonesb, open the start menu and select Settings. If the GPO is working when ANY user on the Win10 box goes to the settings page, they will only see the About information of the PC.
 All other settings options are removed and inaccessible.
