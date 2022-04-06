@@ -51,17 +51,18 @@ Panel".
     It is important to remember that GPOs cannot be assigned to a AD group only to OUs. This might mean that there is an OU with only one group in it just so a GPO can be assigned. (If the previous two sentences make your head hurt you are beginning to understand why GPOs are so complex).
 
 9.  In the GPO editor open Computer Configuration -> Policies -> Administrative Templates: Policy definitions... -> Control Panel
-
 \
+
 ![][3]
 
 10. Double click on Settings Page Visibility to open the configuration window for that option. As shown on the right side there is some limited help for configuring choices regarding this GPO control. Sometimes they are helpful.... Uhhh sometimes not, Google is your friend here.
-
 \
+
 ![][4]
 
 11. Select the "Enabled" option. This will un-gray options below. Reading the right-side pane about the GPO control provides information about options. In this case we will set the Settings page on affected PCs to only show the "About" information of the PC. This will hide all the other settings options from the users. To do this in the "Settings Page Visibility:" fill in *showonly:about* and press the OK button to save.
 \
+
 ![][5]
 
 12. Once you have created and linked a GPO make sure your workstation is in the OU that the GPO is applied to. There are three options to get a GPO to apply.
