@@ -132,7 +132,7 @@ but not be applied. This feature is VERY useful when trouble shooting.
 Create separate GPOs for each exercise with descriptive names. Before attempting any of these exercises makes sure to disable (see above) any previous GPOs that were created. Interactions between GPOs can be very difficult to trouble shoot especially when just beginning with the
 tool.
 
-    To learn more about GPOs - **Google is your friend!**
+To learn more about GPOs - **Google is your friend!**
 
 ### Simple
 
