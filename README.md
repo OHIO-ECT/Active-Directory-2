@@ -18,7 +18,7 @@ Pic for reference):
     Under "Ducky Labs" create OUs: Users, Computers and Groups
 
     Under "Ducky Labs\\Computers" create OUs: Sales and Marketing
-
+\
 \
 ![][1]
 
