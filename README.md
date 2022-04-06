@@ -13,7 +13,6 @@
 2.  Use the MMC Console saved in previous lab. Create the following (see
 Pic for reference):
 \
-
 Under "lab.com" create an OU: "Ducky Labs"
 \
 Under "Ducky Labs" create OUs: Users, Computers and Groups
