@@ -26,7 +26,6 @@ Pic for reference):
 
 4.  From lab.com\\Users move Groups: Sales and Marketing into lab.com\\Ducky Labs\\Groups OU
 
-
 5.  From lab.com\\Computers move Computer: WIN10-VM-ITL into lab.com\\Ducky Labs\\Computers\\Sales
 
 ## GPO Creation
