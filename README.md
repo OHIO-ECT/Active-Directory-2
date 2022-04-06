@@ -35,8 +35,8 @@ Pic for reference):
 
     In the GPO view only OUs are shown, no leaf objects. Right-Click on the "Sales" OU and select *Create a GPO in this domain and Link it here...*. Call the new GPO "Computer - Remove Settings and Control
 Panel".
-\
-**Note:** That the default "lab.com\\Computers" OU does NOT show in the GPO editor as a choice for attaching policies to.
+
+    **Note:** That the default "lab.com\\Computers" OU does NOT show in the GPO editor as a choice for attaching policies to.
 
 
 7.  Right-Click on the new GPO and select Edit. This will open the GPO editor (note the "Standard" view option in the right-side pane is often easier to deal with as shown in image).
