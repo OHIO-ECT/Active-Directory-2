@@ -10,20 +10,19 @@
 
 1.  In GNS3, open previous Active Directory Introduction project.
 <br>
-
 2.  Use the MMC Console saved in previous lab. Create the following (see
 Pic for reference):
-\
+<br>
 Under "lab.com" create an OU: "Ducky Labs"
-\
+<br>
 Under "Ducky Labs" create OUs: Users, Computers and Groups
-\
+<br>
+
 Under "Ducky Labs\\Computers" create OUs: Sales and Marketing
-\
+<br>
 ![][1]
 
 3.  From lab.com\\Users OU move users: Sally Smith and Bob Jones into lab.com\\Ducky Labs\\Users OU
-<br>
 
 4.  From lab.com\\Users move Groups: Sales and Marketing into lab.com\\Ducky Labs\\Groups OU
 <br>
@@ -46,11 +45,11 @@ Panel".
 <br>
 
 8.  This image shows a hierarchy with two top categories Computer Configuration and User Configuration. In order to make this as sane as possible when building a GPO only work with the Computer Configuration side **OR** the User Configuration side. GPOs that need both do occur but are rare!
-\
+<br>
 Computer Configuration GPOs change options a specific computer NO MATTER WHO logs into it. These GPOs are assigned to OUs the contain computer AD objects. In our case "lab.com\\Ducky Labs\\Computers\\Sales".
-\
+<br>
 User Configuration GPOs change options that follow a user NO MATTER WHICH workstation they use. These GPOs are assigned to OUs the contain user AD objects. In our case "lab.com\\Ducky Labs\\Users".
-\
+<br>
 It is important to remember that GPOs cannot be assigned to a AD group only to OUs. This might mean that there is an OU with only one group in it just so a GPO can be assigned. (If the previous two sentences make your head hurt you are beginning to understand why GPOs are so complex).
 <br>
 
